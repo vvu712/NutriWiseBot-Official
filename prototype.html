@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prototype</title>
+    <script
+      src="https://kit.fontawesome.com/ba3d3b6eb8.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      input {
+        width: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--prototype-->
+    <div
+      style="
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*change top to 900px*/
+        top: 00px;
+        background-color: pink;
+        height: 1000px;
+        width: 1000px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+      "
+    >
+      <!--black screen prototype -->
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+          position: absolute;
+          height: 567px;
+          width: 315px;
+          border-radius: 40px;
+          background: #000;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        "
+      >
+        <!--top button-->
+        <div
+          style="
+            background-color: black;
+            margin: 0 auto;
+            width: 100px;
+            height: 20px;
+            border-radius: 40px;
+            z-index: 10001;
+            top: 20px;
+            position: absolute;
+          "
+        ></div>
+        <!--white screen-->
+        <div
+          style="
+            display: flex;
+            background-color: rgb(237, 232, 232);
+            height: 550px;
+            width: 295px;
+            border-radius: 25px;
+            margin: 7px;
+            justify-content: center;
+          "
+        >
+          <!--sign in page-->
+
+          <div
+            id="signUpPrototype"
+            style="
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center;
+              position: absolute;
+              right: 0;
+              left: 0;
+              top: 100px;
+              z-index: 1000;
+            "
+          >
+            <p>NutriWise</p>
+            <img
+              style="width: 100px; height: 100px; border-radius: 50px"
+              src="/nutriwise offical/practice pictures nutriwise/robot.png"
+              alt=""
+            />
+            <p>SIGN IN</p>
+
+            <div
+              style="
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+              "
+            >
+              <label for="emailBot">email*</label>
+              <input style="width: 200px" type="text" name="" id="emailBot" />
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+              "
+            >
+              <label for="passwordBot">password*</label>
+              <input
+                style="width: 200px"
+                type="text"
+                name=""
+                id="passwordBot"
+              />
+            </div>
+            <br />
+            <button style="background-color: rgb(237, 232, 232); border: none">
+              SUBMIT
+            </button>
+            <br />
+            <div
+              style="
+                display: flex;
+                justify-content: space-evenly;
+                width: 300px;
+                align-items: center;
+              "
+            >
+              <p>Forgot password</p>
+              <button
+                onclick="demo()"
+                style="
+                  display: flex;
+                  align-items: center;
+                  height: 20px;
+                  border-radius: 30px;
+                  border: none;
+                  background-color: rgb(188, 201, 171);
+                "
+              >
+                <p>SIGN UP</p>
+              </button>
+            </div>
+          </div>
+
+          <!--general questions-->
+          <div
+            id="genQuestions"
+            style="
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+
+              align-items: center;
+              position: absolute;
+              right: 0;
+              left: 0;
+              top: 35px;
+              z-index: 1000;
+            "
+          >
+            <p>SIGN UP DEMO</p>
+
+            <!--username column-->
+            <div
+              style="
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                flex-direction: row;
+              "
+            >
+              <div style="display: flex; flex-direction: column">
+                <label for="userName">USERNAME*</label>
+                <input id="userName" type="text" />
+              </div>
+              <div style="display: flex; flex-direction: column">
+                <label for="password">PASSWORD*</label>
+                <input id="password" type="text" />
+              </div>
+            </div>
+
+            <p>LET'S GET TO KNOW YOU</p>
+            <!--first name column-->
+            <div
+              style="display: flex; justify-content: space-evenly; width: 100%"
+            >
+              <div style="display: flex; flex-direction: column">
+                <label for="firstName">FIRST NAME*</label>
+                <input id="firstName" type="text" />
+              </div>
+              <div style="display: flex; flex-direction: column">
+                <label for="DOB">DATE OF BIRTH*</label>
+                <input id="DOB" type="text" />
+              </div>
+            </div>
+            <!--weight/height-->
+            <div
+              style="
+                display: flex;
+
+                width: 100%;
+              "
+            >
+              <div style="padding-left: 30px">
+                <label for="q1">WEIGHT*</label>
+                <input id="q1" type="number" />
+                <label for="">lb</label>
+              </div>
+
+              <div style="padding-right: 23px">
+                <label for="q2">HEIGHT*</label>
+                <input id="q2" type="number" />
+                <label for="q2">in</label>
+              </div>
+            </div>
+            <br />
+            <!--ethnicity/nationality-->
+            <div style="display: flex; padding-left: 30px">
+              <div>
+                <label for="q3">ETHNICITY?</label>
+                <input id="q3" type="text" />
+              </div>
+              <div style="padding-right: 10px">
+                <label for="q4">NATIONALITY?</label>
+                <input id="q4" type="text" />
+              </div>
+            </div>
+            <br />
+
+            <div>
+              <label for="q5">DIETARY RESTRICTIONS?</label>
+              <input id="q5" type="text" />
+            </div>
+            <div>
+              <label for="q6">MEDICAL HISTORY?</label>
+              <input id="q6" type="text" />
+            </div>
+            <div>
+              <label for="q7">GENDER?</label>
+              <input id="q7" type="text" />
+            </div>
+            <div
+              style="display: flex; flex-direction: column; text-align: center"
+            >
+              <p>DIETARY PREFERENCES</p>
+              <div style="width: 300px; padding-right: 20px">
+                <div style="display: flex; flex-direction: row">
+                  <input
+                    type="checkbox"
+                    id="chinese"
+                    value="chinese"
+                    name="preference"
+                  />
+                  <label for="chinese">chinese</label>
+
+                  <input
+                    type="checkbox"
+                    id="italian"
+                    value="italian"
+                    name="preference"
+                  />
+                  <label for="italian">italian </label>
+
+                  <input
+                    type="checkbox"
+                    id="mexican"
+                    value="mexican"
+                    name="preference"
+                  />
+                  <label for="mexican">mexican </label>
+                </div>
+                <div style="display: flex">
+                  <input
+                    type="checkbox"
+                    id="mediterrean"
+                    value="mediterrean"
+                    name="preference"
+                  />
+                  <label for="mediterrean">mediterrean </label>
+
+                  <input
+                    type="checkbox"
+                    id="indian"
+                    value="indian"
+                    name="preference"
+                  />
+                  <label for="indian">indian</label>
+
+                  <input
+                    type="checkbox"
+                    id="thai"
+                    value="thai"
+                    name="preference"
+                  />
+                  <label for="thai">thai</label>
+                </div>
+                <div style="display: flex">
+                  <input
+                    type="checkbox"
+                    id="hawaiian"
+                    value="hawaiian"
+                    name="preference"
+                  />
+                  <label for="hawaiian">hawaiian</label>
+                  <input
+                    type="checkbox"
+                    id="vietnamese"
+                    value="vietnamese"
+                    name="preference"
+                  />
+                  <label for="vietnamese">chinese </label>
+                  <input
+                    type="checkbox"
+                    id="filipino"
+                    value="vietnamese"
+                    name="preference"
+                  />
+                  <label for="filipino">filipino </label>
+                </div>
+              </div>
+            </div>
+            <br />
+            <button onclick="genQuestionsBTN()">CONTINUE</button>
+          </div>
+
+          <!--home page - should be display flex -->
+          <div id="home" style="position: relative; width: 100%; display: none">
+            <div
+              style="
+                position: absolute;
+                background-color: rgb(129, 157, 129);
+                height: 100px;
+                width: 295px;
+                border-top-right-radius: 25px;
+                border-top-left-radius: 25px;
+              "
+            >
+              <p>NutriWise</p>
+            </div>
+            <div
+              style="
+                bottom: 0px;
+                position: absolute;
+                background-color: rgb(27, 52, 27);
+                height: 75px;
+                width: 295px;
+                border-bottom-right-radius: 25px;
+                border-bottom-left-radius: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+              "
+            >
+              <button style="height: 60px; width: 60px"></button>
+              <button style="height: 60px; width: 60px"></button>
+              <button style="height: 60px; width: 60px">
+                <i class="fa-solid fa-book fa-2xl"></i>
+              </button>
+              <button style="height: 60px; width: 60px">
+                <i style="width: 100%" class="fa-solid fa-user fa-2xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function demo() {
+        var signUpInfo = document.getElementById("signUpPrototype");
+        var questions = document.getElementById("genQuestions");
+
+        signUpInfo.style.display = "none";
+        questions.style.display = "flex";
+      }
+      function genQuestionsBTN() {
+        var genQ = document.getElementById("genQuestions");
+        genQ.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
