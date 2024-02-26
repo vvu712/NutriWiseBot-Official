@@ -10,17 +10,18 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style/styleSheet.css" />
+    
   </head>
   <body
     style="
       position: relative;
-      display: flex;
+      
       justify-content: center;
       align-items: center;
     "
   >
     <!--green section position: relative-->
-    <div style="height:3900px;width: 100%; position: relative">
+    <div style="height:3700px;width: 100%; ">
       <!--header section position: fixed-->
       <div
         class="headerNav"
@@ -105,9 +106,9 @@
             </li>
 
             <li>
-              <a href="feedback.html" class="NavBar"
-                >FEEDBACK</a
-              >
+              
+                <a href="feedback.html" class="NavBar">FEEDBACK</a>
+              
             </li>
             <li>
               <a href="#contact" class="NavBar">CONTACT US</a>
@@ -115,182 +116,17 @@
           </ul>
         </div>
       </div>
+    <!--products position:absolute; top:180px-->
+    <div 
+    class='prototype'
+    id="prototype1"
+    >
+      
+    </div>
+      
+    </div>
 
-      <!--product features img section position:-->
-
-      <div
-        id="imgSection"
-        style="
-          background-color: rgb(129, 157, 129);
-          padding: 15px;
-          margin: 0 auto;
-          display: flex;
-          flex-direction: row;
-          position: relative;
-          top: 180px;
-
-          max-width: 850px;
-          z-index: 2;
-        "
-      >
-        <!--small image-->
-        <div
-          class="imgSection"
-          style="
-            z-index: 3;
-            display: flex;
-            flex-direction: column;
-
-            justify-content: space-evenly;
-            align-items: center;
-            border: 1px solid;
-          "
-        >
-          <button onclick="changePic('img1btn', 'trilogypregame')">
-            <img
-              id="img1btn"
-              class="imgButton"
-              src="practice pictures nutriwise/trilogypregame.jpg"
-              alt="1"
-            />
-          </button>
-          <button onclick="changePic('img2btn', 'vegas')">
-            <img
-              id="img2btn"
-              class="imgButton"
-              src="practice pictures nutriwise/vegas.jpg"
-              alt="2"
-            />
-          </button>
-          <button onclick="changePic('img3btn', 'jack')">
-            <img
-              id="img3btn"
-              class="imgButton"
-              src="practice pictures nutriwise/jack.jpg"
-              alt="3"
-            />
-          </button>
-          <button onclick="changePic('img4btn', 'journal')">
-            <img
-              id="img4btn"
-              class="imgButton"
-              src="practice pictures nutriwise/journal.jpg"
-              alt="4"
-            />
-          </button>
-          <button onclick="changePic('img5btn', 'characters')">
-            <img
-              id="img5btn"
-              class="imgButton"
-              src="practice pictures nutriwise/characters.png"
-              alt="5"
-            />
-          </button>
-          <button onclick="changePic('img6btn', 'vegas2')">
-            <img
-              id="img6btn"
-              class="imgButton"
-              src="practice pictures nutriwise/vegas2.jpeg"
-              alt="idk"
-            />
-          </button>
-        </div>
-        <!--big image-->
-        <div style="flex: 1; padding: 13px; margin: 0 auto">
-          <img
-            style="
-              z-index: 2;
-
-              margin: 0 auto;
-
-              width: 100%;
-              height: 600px;
-              display: block;
-            "
-            class="imageDisplay"
-            id="trilogypregame"
-            src="practice pictures nutriwise/trilogypregame.jpg"
-            alt=""
-          />
-          <img
-            style="
-              z-index: 2;
-
-              margin: 0 auto;
-
-              width: 100%;
-              height: 600px;
-              display: none;
-            "
-            id="vegas"
-            class="imageDisplay"
-            src="practice pictures nutriwise/vegas.jpg"
-            alt=""
-          />
-
-          <img
-            style="
-              z-index: 2;
-
-              margin: 0 auto;
-
-              width: 100%;
-              height: 600px;
-              display: none;
-            "
-            id="jack"
-            class="imageDisplay"
-            src="practice pictures nutriwise/jack.jpg"
-            alt=""
-          />
-          <img
-            style="
-              z-index: 2;
-
-              margin: 0 auto;
-
-              width: 100%;
-              height: 600px;
-              display: none;
-            "
-            id="journal"
-            class="imageDisplay"
-            src="practice pictures nutriwise/journal.jpg"
-            alt=""
-          />
-          <img
-            style="
-              z-index: 2;
-
-              margin: 0 auto;
-
-              width: 100%;
-              height: 600px;
-              display: none;
-            "
-            id="characters"
-            class="imageDisplay"
-            src="practice pictures nutriwise/characters.png"
-            alt=""
-          />
-          <img
-            style="
-              z-index: 2;
-
-              margin: 0 auto;
-
-              width: 100%;
-              height: 600px;
-              display: none;
-            "
-            id="vegas2"
-            class="imageDisplay"
-            src="practice pictures nutriwise/vegas2.jpeg"
-            alt=""
-          />
-        </div>
-      </div>
-
+      
       <!--first green position: absolute-->
       <div
         class="greenSec"
@@ -298,8 +134,8 @@
           border: 1px solid;
           background-color: rgb(188, 201, 171);
           height: 650px;
-          position: relative;
-          top: -100px;
+          position: absolute;
+          top: 500px;
           right: 0;
           left: 0;
         "
@@ -353,6 +189,7 @@
       <!--all 6 features-->
 
       <div
+        class="sixFeatures"
         style="
           text-align: center;
           justify-content: center;
@@ -387,6 +224,7 @@
         >
           <!--act therapy-->
           <div
+            
             style="
               padding-left: 40px;
               padding-right: 50px;
@@ -407,7 +245,7 @@
                 align-items: center;
               "
               id="therapyButton"
-              onclick="removeTherapyText()"
+              onclick="flip('therapyPic','therapyText')"
             >
               <img
                 id="therapyPic"
@@ -424,7 +262,8 @@
               <br />
               <p  class='productFeaturesTitle1' >GET ACT THERAPY</p>
 
-              <p class='productFeaturesText1'id="therapyText"></p>
+              <p class='productFeaturesText1'id="therapyText">Engage in Acceptance and Commitment Therapy (ACT) techniques through our Conversational AI bot, fostering mindfulness around eating habits and encouraging commitment to personal goals. This paves the way for a comprehensive nutrition solution with lasting effects.
+              </p>
             </button>
           </div>
 
@@ -441,7 +280,7 @@
                 align-items: center;
               "
               id="recipeButton"
-              onclick="removeRecipeText()"
+              onclick="flip('recipePic','recipeText')"
             >
               <img
                 id="recipePic"
@@ -458,7 +297,8 @@
               <br />
               <p class='productFeaturesTitle1' style="z-index: 1000">ASK FOR NEW RECIPE IDEAS</p>
 
-              <p class='productFeaturesText1'id="recipeText"></p>
+              <p class='productFeaturesText1'id="recipeText">Explore a diverse culinary world with 1000+ new recipes from various cultures. Access them all, and let the bot be your culinary guide, offering recommendations and answering your questions about recipes and foods.
+              </p>
             </button>
           </div>
           <!--nutritionalInfo-->
@@ -474,7 +314,7 @@
                 align-items: center;
               "
               id="nutritionButton"
-              onclick="removeNutritionText()"
+              onclick="flip('nutritionPic','nutritionText')"
             >
               <img
                 id="nutritionPic"
@@ -485,7 +325,7 @@
               
               <p class='productFeaturesTitle1' style="z-index: 1000">SCAN FOR NUTRITIONAL INFORMATION</p>
 
-              <p class='productFeaturesText1' id="nutritionText"></p>
+              <p class='productFeaturesText1' id="nutritionText" style="display:none">Utilize the convenience of barcode scanning to instantly access nutritional information, including sugar, fiber, salt macros, and calorie content. Stay informed about what you consume with a quick scan.</p>
             </button>
           </div>
           <!--food journaling-->
@@ -501,7 +341,7 @@
                 align-items: center;
               "
               id="journalButton"
-              onclick="removeJournalText()"
+              onclick="flip('journalPic','journalText')"
             >
               <img
                 id="journalPic"
@@ -518,7 +358,9 @@
               <br />
               <p class='productFeaturesTitle1' style="z-index: 1000">ASSIST WITH FOOD JOURNALING</p>
 
-              <p class='productFeaturesText1' id="journalText"></p>
+              <p class='productFeaturesText1' id="journalText">Share your dietary habits through image and text inputs, allowing the AI bot to analyze and provide personalized advice based on your unique information. Tailor-made recommendations for your individual needs.
+              
+              </p>
             </button>
           </div>
         </div>
@@ -542,7 +384,7 @@
                   justify-content: center;
                 "
                 id="characterButton"
-                onclick="removeCharacterText()"
+                onclick="flip('characterPic','characterText')"
               >
                 <img
                   id="characterPic"
@@ -560,7 +402,8 @@
 
                 <p class='productFeaturesTitle' >CUSTOMIZABLE CHARACTERS</p>
                 
-                <p class='productFeaturesText' id="characterText" ></p>
+                <p class='productFeaturesText' id="characterText">Experience motivation like never before with cute characters, rewarding journeys, and items that will keep you engaged with the app. Turn your nutrition journey into a fun and rewarding adventure.
+                </p>
               </button>
             </div>
 
@@ -578,7 +421,7 @@
                   justify-content: center;
                 "
                 id="buddyButton"
-                onclick="removeBuddyText()"
+                onclick="flip('buddyPic','buddyText')"
               >
                 <img
                   id="buddyPic"
@@ -596,7 +439,7 @@
                 <br />
                 <p class='productFeaturesTitle' style="z-index: 1000">YOUR 24/7 NUTRITIONAL BUDDY</p>
 
-                <p class='productFeaturesText' id="buddyText"></p>
+                <p class='productFeaturesText' id="buddyText">Access nutrition advice round the clock with our 24/7 available bot. Stay motivated and receive timely reminders to keep you on track toward achieving your goals. Your personalized nutrition companion is always at your service.</p>
               </button>
             </div>
           </div>
@@ -610,8 +453,8 @@
           border: 1px solid;
           background-color: rgb(188, 201, 171);
           height: 650px;
-          position: relative;
-          top: 40px;
+          position: absolute;
+          top: 1340px;
           right: 0;
           left: 0;
         "
@@ -626,8 +469,8 @@
           border: 1px solid;
           background-color: rgb(188, 201, 171);
           height: 650px;
-          position: relative;
-          top: 130px;
+          position: absolute;
+          top: 2280px;
           right: 0;
           left: 0;
         "
@@ -639,8 +482,8 @@
           margin: 0 auto;
 
           z-index: 50;
-          position: relative;
-          top: 0px;
+          position: absolute;
+          top: 2600px;
 
           left: 0px;
           right: 0px;
@@ -686,6 +529,7 @@
       <!--footer-->
 
      <div
+     id="footer"
      style="
      min-width:1000px;
      border: 1px solid;
@@ -749,7 +593,7 @@
                      <div style="padding-right:10px;width:50%">
                          <p >Email*</p>
                      
-                         <input style="width: 100%;"type="text"  id="email" minlength="1" > 
+                         <input style="width: 100%;"type="text"  id="contactEmail" minlength="1" > 
                          <br>
          
                      </div>
@@ -804,83 +648,73 @@
     </div>
 
     <script>
-      function changePic(btnId, imgName) {
-        const image = document.querySelectorAll(".imageDisplay");
-        image.forEach((img) => {
-          img.style.display = "none";
-        });
-        const selectedImage = document.getElementById(imgName);
-        if (selectedImage) {
-          selectedImage.style.display = "block";
-        }
+      function setupEventListeners() {
+        document.getElementById("inBTN").addEventListener("click",function(){changePrototypePage('signInPage','signUpPage');});
+        // Add event listeners for other buttons in prototype.html
+  }
+      /*---------------prototyp combine later-----------*/
+      function demo() {
+        var signUpInfo = document.getElementById("signUpPrototype");
+        var questions = document.getElementById("genQuestions");
+
+        signUpInfo.style.display = "none";
+        questions.style.display = "flex";
       }
-      function removeNutritionText() {
-        var img = document.getElementById("nutritionPic");
-        var text = document.getElementById("nutritionText");
+      function genQuestionsBTN() {
+        var genQ = document.getElementById("genQuestions");
+        var home = document.getElementById('home');
+        genQ.style.display = "none";
+        home.style.display='flex';
+
+      }
+      
+      
+      
+      
+      function flip(cardpicID, cardtextID) {
+        var img = document.getElementById(cardpicID);
+        var text = document.getElementById(cardtextID);
         if (img.style.display === "none") {
           img.style.display = "block";
           text.textContent = "";
         } else {
           img.style.display = "none";
-          text.textContent =
-            "Utilize the convenience of barcode scanning to instantly access nutritional information, including sugar, fiber, salt macros, and calorie content. Stay informed about what you consume with a quick scan.";
+          text.style.display = 'block'
+           
         }
       }
-      function removeRecipeText() {
-        var img = document.getElementById("recipePic");
-        var text = document.getElementById("recipeText");
-        if (img.style.display === "none") {
-          img.style.display = "block";
-          text.textContent = "";
-        } else {
-          img.style.display = "none";
-          text.textContent = "Explore a diverse culinary world with 1000+ new recipes from various cultures. Access them all, and let the bot be your culinary guide, offering recommendations and answering your questions about recipes and foods.";
-        }
+      
+      
+
+      fetch("prototype.html")
+        .then((response) => response.text())
+        .then((data) => {
+          // Insert the loaded content into the container section
+          document.getElementById("prototype1").innerHTML = data;
+          
+          setupEventListeners();
+        })
+        
+
+        .catch((error) => console.error("Error loading content:", error));
+        function changePrototypePage(currentPage, nextPage) {
+        var signUpInfo = document.getElementById(currentPage);
+        var questions = document.getElementById(nextPage);
+
+        signUpInfo.style.display = "none";
+        questions.style.display = "flex";
       }
-      function removeTherapyText() {
-        var img = document.getElementById("therapyPic");
-        var text = document.getElementById("therapyText");
-        if (img.style.display === "none") {
-          img.style.display = "block";
-          text.textContent = "";
-        } else {
-          img.style.display = "none";
-          text.textContent = "Engage in Acceptance and Commitment Therapy (ACT) techniques through our Conversational AI bot, fostering mindfulness around eating habits and encouraging commitment to personal goals. This paves the way for a comprehensive nutrition solution with lasting effects.";
-        }
+      function changePage(page) {
+        var enable = document.getElementById(page);
+        const disable = document.getElementById("home");
+        disable.style.display = "none";
+        enable.style.display = "block";
       }
-      function removeJournalText() {
-        var img = document.getElementById("journalPic");
-        var text = document.getElementById("journalText");
-        if (img.style.display === "none") {
-          img.style.display = "block";
-          text.textContent = "";
-        } else {
-          img.style.display = "none";
-          text.textContent = "Share your dietary habits through image and text inputs, allowing the AI bot to analyze and provide personalized advice based on your unique information. Tailor-made recommendations for your individual needs.";
-        }
-      }
-      function removeCharacterText() {
-        var img = document.getElementById("characterPic");
-        var text = document.getElementById("characterText");
-        if (img.style.display === "none") {
-          img.style.display = "block";
-          text.textContent = "";
-        } else {
-          img.style.display = "none";
-          text.textContent =
-            "Experience motivation like never before with cute characters, rewarding journeys, and items that will keep you engaged with the app. Turn your nutrition journey into a fun and rewarding adventure.";
-        }
-      }
-      function removeBuddyText() {
-        var img = document.getElementById("buddyPic");
-        var text = document.getElementById("buddyText");
-        if (img.style.display === "none") {
-          img.style.display = "block";
-          text.textContent = "";
-        } else {
-          img.style.display = "none";
-          text.textContent = "Access nutrition advice round the clock with our 24/7 available bot. Stay motivated and receive timely reminders to keep you on track toward achieving your goals. Your personalized nutrition companion is always at your service.";
-        }
+      function back(current) {
+        const enable = document.getElementById("home");
+        var disable = document.getElementById(current);
+        enable.style.display = "flex";
+        disable.style.display = "none";
       }
     </script>
   </body>
