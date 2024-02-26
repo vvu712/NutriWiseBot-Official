@@ -8,15 +8,16 @@
       src="https://kit.fontawesome.com/ba3d3b6eb8.js"
       crossorigin="anonymous"
     ></script>
+    
     <style>
       
       * {
         padding: 0;
         margin: 0;
+        font-family: 'Times New Roman', Times, serif;
       }
       #genQuestions input{
         width:80px;
-        
         
       }
 
@@ -95,6 +96,7 @@
         text-decoration: none;
         color: rgb(12, 16, 14);
       }
+      
 
       a:hover {
         color: rgb(188, 201, 171);
@@ -117,7 +119,7 @@
       /*-----------------end of styling navBar----------*/
     </style>
   </head>
-  <body style="position: relative;height:2500px; display:flex;justify-content:center;flex-direction: column; ">
+  <body style=" position:relative;height:5000px; display:flex;justify-content:center;flex-direction: column; ">
     
     <!--header-->
     <div
@@ -196,13 +198,13 @@
             >
           </li>
           <li>
-            <a href="#imgSection" class="NavBar">OUR DESIGN</a>
+            <a href="#imgSection" class="NavBar" style="color: rgb(162, 174, 146);">OUR DESIGN</a>
           </li>
 
           <li>
-            <a href="feedback.html" class="NavBar"
-              >FEEDBACK</a
-            >
+            
+            <a href="feedback.html" class="NavBar">FEEDBACK</a>
+            
           </li>
           <li>
             <a href="#contact" class="NavBar"
@@ -212,6 +214,185 @@
         </ul>
       </div>
     </div>
+    <!--product features img section position:-->
+
+    <div
+    id="imgSection"
+    style="
+      background-color: rgb(129, 157, 129);
+      padding: 15px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      top: 180px;
+      left:0;
+      right:0;
+      min-width:850px;
+
+      max-width: 850px;
+      z-index: 2;
+    "
+  >
+    <!--small image-->
+    <div
+      class="imgSection"
+      style="
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-evenly;
+        align-items: center;
+        border: 1px solid;
+      "
+    >
+      <button onclick="changePic('img1btn', 'trilogypregame')">
+        <img
+          id="img1btn"
+          class="imgButton"
+          src="practice pictures nutriwise/trilogypregame.jpg"
+          alt="1"
+        />
+      </button>
+      <button onclick="changePic('img2btn', 'vegas')">
+        <img
+          id="img2btn"
+          class="imgButton"
+          src="practice pictures nutriwise/vegas.jpg"
+          alt="2"
+        />
+      </button>
+      <button onclick="changePic('img3btn', 'girlsvegas')">
+        <img
+          id="img3btn"
+          class="imgButton"
+          src="practice pictures nutriwise/girlsvegas.jpg"
+          alt="3"
+        />
+      </button>
+      <button onclick="changePic('img4btn', 'journal')">
+        <img
+          id="img4btn"
+          class="imgButton"
+          src="practice pictures nutriwise/journal.jpg"
+          alt="4"
+        />
+      </button>
+      <button onclick="changePic('img5btn', 'characters')">
+        <img
+          id="img5btn"
+          class="imgButton"
+          src="practice pictures nutriwise/characters.png"
+          alt="5"
+        />
+      </button>
+      <button onclick="changePic('img6btn', 'bigbear')">
+        <img
+          id="img6btn"
+          class="imgButton"
+          src="practice pictures nutriwise/bigbear.jpg"
+          alt="idk"
+        />
+      </button>
+    </div>
+    <!--big image-->
+    <div style="flex: 1; padding: 13px; margin: 0 auto">
+      <img
+        style="
+          z-index: 2;
+
+          margin: 0 auto;
+
+          width: 100%;
+          height: 600px;
+          display: block;
+        "
+        class="imageDisplay"
+        id="trilogypregame"
+        src="practice pictures nutriwise/trilogypregame.jpg"
+        alt=""
+      />
+      <img
+        style="
+          z-index: 2;
+
+          margin: 0 auto;
+
+          width: 100%;
+          height: 600px;
+          display: none;
+        "
+        id="vegas"
+        class="imageDisplay"
+        src="practice pictures nutriwise/vegas.jpg"
+        alt=""
+      />
+
+      <img
+        style="
+          z-index: 2;
+
+          margin: 0 auto;
+
+          width: 100%;
+          height: 600px;
+          display: none;
+        "
+        id="girlsvegas"
+        class="imageDisplay"
+        src="practice pictures nutriwise/girlsvegas.jpg"
+        alt=""
+      />
+      <img
+        style="
+          z-index: 2;
+
+          margin: 0 auto;
+
+          width: 100%;
+          height: 600px;
+          display: none;
+        "
+        id="journal"
+        class="imageDisplay"
+        src="practice pictures nutriwise/journal.jpg"
+        alt=""
+      />
+      <img
+        style="
+          z-index: 2;
+
+          margin: 0 auto;
+
+          width: 100%;
+          height: 600px;
+          display: none;
+        "
+        id="characters"
+        class="imageDisplay"
+        src="practice pictures nutriwise/characters.png"
+        alt=""
+      />
+      <img
+        style="
+          z-index: 2;
+
+          margin: 0 auto;
+
+          width: 100%;
+          height: 600px;
+          display: none;
+        "
+        id="bigbear"
+        class="imageDisplay"
+        src="practice pictures nutriwise/bigbear.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+    
+
     <!--green sec-->
     <div style="
       width:100%;
@@ -264,7 +445,7 @@
     height:auto; 
     position:absolute; 
     width:850px;
-    top:180px;
+    top:1700px;
     display: flex;
     align-items: center;
     right: 0;
@@ -689,8 +870,6 @@
   </div>
 
 
-  
-    
     
     
     <!--footer-->
@@ -704,9 +883,9 @@
       padding:30px 20px;
       background-color:rgb(188, 201, 171);
         
-        position: absolute;
-        left: 0px;
-        right: 0px;
+      position: absolute;
+      left: 0px;
+      right: 0px;
         bottom: 0px;
         z-index: 500;
 
@@ -821,6 +1000,17 @@
         genQ.style.display = "none";
         home.style.display='flex';
 
+      }
+
+      function changePic(btnId, imgName) {
+        const image = document.querySelectorAll(".imageDisplay");
+        image.forEach((img) => {
+          img.style.display = "none";
+        });
+        const selectedImage = document.getElementById(imgName);
+        if (selectedImage) {
+          selectedImage.style.display = "block";
+        }
       }
       
       
